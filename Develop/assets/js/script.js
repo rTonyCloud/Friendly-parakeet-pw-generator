@@ -7,7 +7,7 @@ var specials = ['@','%','+','/',"'",'!','#','$','^','?',':',',',')','(','}','{',
 
 // GeneratePassword for prompting the length and characters of the password
 function generatePassword() {
-    var length = parseint(prompt("How many characters would you like your password to have"));
+    var length = parseInt(prompt("How many characters would you like your password to have"));
     if (Number.isNaN(length)) {
         alert("Password must be provided as a number");
         return null
@@ -41,10 +41,14 @@ function generatePassword() {
         return passwordOption
 }
 // generate pw 
-let newPassword = "";
-for(let i =0; I<=length; i++){
-var random = Math.floor(Math.randonm()*passwordArray.length);
-newPassword+=[random]
+var newPassword = [];
+var passwordArray = "";
+
+
+for (var i = 0; i < numbers; i++){
+var random = Math.floor(Math.randonm()*number.length);
+console.log();
+
 }
 // write password function to call generatePassword function
 
