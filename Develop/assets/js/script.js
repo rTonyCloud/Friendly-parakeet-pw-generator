@@ -58,7 +58,7 @@ function writePassword() {
     var password = generatePassword();
     var generatePw = document.querySelector("#password");
 
-    generatePassword.value = password;
+    generatePassword.value = passwordOption;
 }
 
     // query selector for pw button
