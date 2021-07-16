@@ -27,9 +27,9 @@ function generatePassword() {
     var confirmuppercaseCharacters = confirm("Click okay to include uppercase");
     var confirmnumberCharacters = confirm("Click okay to include number");
     
-    if (confirmspecialCharacters === false && confirmlowercaseCharacters === false && confirmuppercaseCharacters === false & confirmnumberCharacters === false); {
+    if (confirmspecialCharacters === false && confirmlowercaseCharacters === false && confirmuppercaseCharacters === false && confirmnumberCharacters === false) {
         alert("You didn't click okay, you must select at least one character type.");
-        return null
+        
     }
      var passwordOption = {
          length: length, 
@@ -38,27 +38,45 @@ function generatePassword() {
          confirmnumberCharacters: confirmnumberCharacters,
          confirmspecialCharacters: confirmspecialCharacters,
      }    
-        return passwordOption
+        // generate pw 
+        var newPassword = "";
+        var passwordArray = [];
+      
+     if (confirmuppercaseCharacters) {
+         passwordArray = [...passwordArray, ...upperCases];
+     }
+            
+     if (confirmlowercaseCharacters) {
+        passwordArray = [...passwordArray, ...lowerCases]
+    }
+           
+     if (confirmnumberCharacters) {
+        passwordArray = [...passwordArray, ...numbers]
+    }
+
+     if (confirmspecialCharacters) {
+        passwordArray = [...passwordArray, ...specials]
+    }
+           
+     for (var i = 0; i < length; i++){
+        var random = Math.floor(Math.random()*passwordArray.length)
+    
+    var letters = passwordArray[random]
+    newPassword = newPassword + letters;
+        
+     }
+        return newPassword
 }
-// generate pw 
-var newPassword = [];
-var passwordArray = "";
 
-
-for (var i = 0; i < numbers; i++){
-var random = Math.floor(Math.randonm()*number.length);
-console.log();
-
-}
 // write password function to call generatePassword function
 
 
     // Write password to the #password id
 function writePassword() {
-    var password = generatePassword();
-    var generatePw = document.querySelector("#password");
+    var password = generatePassword()
+    var pwContainer = document.querySelector("#password");
 
-    generatePassword.value = passwordOption;
+    pwContainer.value = password;
 }
 
     // query selector for pw button
