@@ -10,7 +10,7 @@
 
 ## Website
 
-https://github.com/rTonyCloud/Friendly-parakeet-pw-generator
+https://rtonycloud.github.io/Friendly-parakeet-pw-generator/
 
 ## Contribution
 
