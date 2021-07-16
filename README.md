@@ -10,7 +10,7 @@
 
 ## Website
 
-https://ajboricua.github.io/Horiseon-agency/
+https://github.com/rTonyCloud/Friendly-parakeet-pw-generator
 
 ## Contribution
 
