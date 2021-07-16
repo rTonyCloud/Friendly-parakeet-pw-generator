@@ -16,4 +16,4 @@ https://ajboricua.github.io/Horiseon-agency/
 
 Made with ❤️ by Tony Rivera
 
-![PW Generator](https://user-images.githubusercontent.com/85594926/122630670-854b3300-d093-11eb-8dc4-9cb0f550bbb2.png)
+![PW Generator]![image](https://user-images.githubusercontent.com/85594926/125889522-81f05177-398f-4246-8c0a-bc0582cd183a.png)
